@@ -1,0 +1,11 @@
+<center>
+<form role = "form" action="/edit/{{user}}/" method="post" enctype="multipart/form-data">{% csrf_token %}
+<table>
+{% for info in form %}
+	<tr><td>{{info.label}}</td><td>{{info}}</td><td>{{info.errors}}</td></tr>
+
+{% endfor %}
+
+</table>
+<input type="submit" name="submit" value="Update"></td>
+</form>

@@ -1,0 +1,17 @@
+<html>
+<head>
+   <link href="../../static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<form class="form-horizontal" role="form" action="/register/" method="post">{% csrf_token %}
+  <h2>Register</h2>
+    {% for data in form %}
+      <div class="form-group"> 
+      <div style="clear:both">
+      <div class="col-sm-2 control-label">{{data.label}}</div><div class="col-sm-2"> {{data}}</div><div class="col-sm-2">{{data.errors}}</div></div></div>
+    {% endfor %}
+     <br />
+<input type="submit" value="Register" />  
+</form>
+</body>
+</html>

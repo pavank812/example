@@ -1,0 +1,20 @@
+<html>
+<head>
+ <link href="../../static/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+ <link href="../../static/bootstrap/css/signin.css" rel="stylesheet" />
+ <title>Signin</title>
+</head> 
+<body>
+ <div class="container">
+ <form class="form-signin" role="form" action="/accounts/auth/" method="post">{% csrf_token %}
+ 	<div><em><class="form-signin-heading">Please sign in OR<a href="/register/"> Register</a></em></div> 	
+    <label class="form-control" for="username">Username:
+    <input type="text" name="username" value="" id="username" required></label>
+    <label class="form-control" for="password">Password:
+    <input type="password" name="password" value="" id="password" required></label>
+    <input  class="btn btn-lg btn-primary btn-block" type="submit" value="login" />
+    <a href="/user/password/reset/">Forgot Password</a>
+    </form>
+</div>
+</body>
+</html>
