@@ -140,7 +140,9 @@ def edituser(request,user_name=1):
 def deleteuser(request,user_name=1):
 	query = db.auth_user.remove({'username':user_name})
 	return HttpResponseRedirect('/accounts/loggedin')
-
+"""
+	getting district
+"""
 def getdistrict(request):
 	args={}
 	return render_to_response('loggedin.html',args)
