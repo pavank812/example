@@ -43,7 +43,10 @@
 	</script>
 </head>
 <body>
-<h2>Hi {{full_name}} you are now logged in!</h2>
+
+<div style="width:500px;">
+<div><h2>Hi {{full_name}} you are now logged in!</h2></div>
+<div style="width:400px;height:300px;float:left">
 <div class="bs-example">
 	<div class="table-responsive">
 	<table class="table table-bordered" style="width:120px">
@@ -61,6 +64,8 @@
 	</table>
 	<p>Click <a href="/accounts/logout/">here</a> to logout.</p> 
 	</div>
+</div>
+<div style="width:100px;height:300px;float:left">
 	<div  style="disabled:disabled">
 		<select class="state" style="disabled:true">
 			<option name="ap" value="ap">AndhraPradesh</option>
@@ -75,8 +80,9 @@
 			
         </select>
 	</div>
-	
+</div>
 
+</div>
 </div>
 </body>
 </html>
